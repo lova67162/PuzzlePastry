@@ -1,0 +1,6 @@
+framework module Pods_PuzzlePastry {
+  umbrella header "Pods-PuzzlePastry-umbrella.h"
+
+  export *
+  module * { export * }
+}

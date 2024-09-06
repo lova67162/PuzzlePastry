@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "maryna2_cartoon_one_lock_icon__minimalism_gold_color_white_back_20d8a8c1-cfdc-43f1-ba61-697ed39e3d32 1.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "maryna2_cartoon_one_lock_icon__minimalism_gold_color_white_back_20d8a8c1-cfdc-43f1-ba61-697ed39e3d32 1@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "maryna2_cartoon_one_lock_icon__minimalism_gold_color_white_back_20d8a8c1-cfdc-43f1-ba61-697ed39e3d32 1@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
