@@ -13,6 +13,8 @@ struct SettingsScreen: View {
     @ObservedObject private var viewModel: SettingsViewModel
     @Environment(\.dismiss) var dismiss
     @State private var isPresentWebView = false
+    @State private var showingLogOutAlert = false
+    @State private var showingDeleteAlert = false
     
     init(viewModel: SettingsViewModel) {
         self.viewModel = viewModel
@@ -53,10 +55,32 @@ struct SettingsScreen: View {
             Spacer()
             HStack(spacing: 12) {
                 RectangleButton(text: "LOG OUT", fontPalette: .delete, layout: .settingsLogOut, style: .light) {
-                     viewModel.logOutButtonClicked()
+                    showingLogOutAlert = true
+//                     viewModel.logOutButtonClicked()
+                }
+                .alert(isPresented: $showingLogOutAlert) {
+                    Alert(
+                        title: Text("Log Out"),
+                        message: Text("Are you sure you want to log out of your account?"),
+                        primaryButton: .cancel(),
+                        secondaryButton: .destructive(Text("Log Out"), action: {
+                            viewModel.logOutButtonClicked()
+                        })
+                    )
                 }
                 RectangleButton(text: "DELETE \nACCOUNT", fontPalette: .delete, layout: .circle, style: .dark) {
-                     viewModel.deleteAccoountButtonClicked()
+                    showingDeleteAlert = true
+//                     viewModel.deleteAccoountButtonClicked()
+                }
+                .alert(isPresented: $showingDeleteAlert) {
+                    Alert(
+                        title: Text("Delete Account"),
+                        message: Text("Are you sure you want to permanently delete your account? This action cannot be undone."),
+                        primaryButton: .cancel(),
+                        secondaryButton: .destructive(Text("Delete"), action: {
+                            viewModel.deleteAccountButtonClicked()
+                        })
+                    )
                 }
             }
             .padding(.vertical, 88)

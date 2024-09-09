@@ -49,7 +49,7 @@ extension SettingsViewModel {
     }
         
     
-    func deleteAccoountButtonClicked() {
+    func deleteAccountButtonClicked() {
         authService.deleteUserAccount { isSuccess in
             if isSuccess {
                 SessionManager.shared.userSession = nil

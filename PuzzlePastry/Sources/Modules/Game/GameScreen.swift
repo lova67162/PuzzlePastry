@@ -187,7 +187,9 @@ struct GameScreen: View {
     private func setupGame() {
         originalImagePieces = splitImage(image: .init(named: viewModel.image) ?? ._1)
         imagePieces = originalImagePieces
-        imagePieces.shuffle()
+        while imagePieces == originalImagePieces {
+            imagePieces.shuffle()
+        }
     }
 }
 
