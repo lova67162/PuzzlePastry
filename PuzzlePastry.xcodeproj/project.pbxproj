@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		361F9D002C8B162000C666AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 361F9CFF2C8B162000C666AF /* GoogleService-Info.plist */; };
+		3639E4372CA2DF6200C2B8E3 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 3639E4362CA2DF6200C2B8E3 /* OneSignalExtension */; };
+		3639E4392CA2DF6200C2B8E3 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 3639E4382CA2DF6200C2B8E3 /* OneSignalFramework */; };
 		3654ACBD2C85AF33002D4BD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3654ACBC2C85AF33002D4BD7 /* AppDelegate.swift */; };
 		3654ACBF2C85AF33002D4BD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3654ACBE2C85AF33002D4BD7 /* SceneDelegate.swift */; };
 		3654ACC12C85AF33002D4BD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3654ACC02C85AF33002D4BD7 /* ViewController.swift */; };
@@ -153,8 +155,10 @@
 				36EBA2022C87B2A8005426DA /* FirebaseStorage in Frameworks */,
 				36EBA1DC2C87B2A8005426DA /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				36EBA1F22C87B2A8005426DA /* FirebaseFunctions in Frameworks */,
+				3639E4372CA2DF6200C2B8E3 /* OneSignalExtension in Frameworks */,
 				36EBA1F82C87B2A8005426DA /* FirebaseInstallations in Frameworks */,
 				36EBA1FE2C87B2A8005426DA /* FirebasePerformance in Frameworks */,
+				3639E4392CA2DF6200C2B8E3 /* OneSignalFramework in Frameworks */,
 				36EBA1F02C87B2A8005426DA /* FirebaseFirestoreCombine-Community in Frameworks */,
 				36EBA1EE2C87B2A8005426DA /* FirebaseFirestore in Frameworks */,
 				36EBA1EC2C87B2A8005426DA /* FirebaseDynamicLinks in Frameworks */,
@@ -507,6 +511,8 @@
 				36EBA2012C87B2A8005426DA /* FirebaseStorage */,
 				36EBA2032C87B2A8005426DA /* FirebaseStorageCombine-Community */,
 				36EBA2052C87B2A8005426DA /* FirebaseVertexAI-Preview */,
+				3639E4362CA2DF6200C2B8E3 /* OneSignalExtension */,
+				3639E4382CA2DF6200C2B8E3 /* OneSignalFramework */,
 			);
 			productName = SweetPuzzles;
 			productReference = 3654ACB92C85AF33002D4BD7 /* PuzzlePastry.app */;
@@ -538,6 +544,7 @@
 			mainGroup = 3654ACB02C85AF33002D4BD7;
 			packageReferences = (
 				36EBA1D82C87B2A8005426DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3639E4352CA2DF6200C2B8E3 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
 			);
 			productRefGroup = 3654ACBA2C85AF33002D4BD7 /* Products */;
 			projectDirPath = "";
@@ -891,6 +898,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3639E4352CA2DF6200C2B8E3 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.4;
+			};
+		};
 		36EBA1D82C87B2A8005426DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -902,6 +917,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3639E4362CA2DF6200C2B8E3 /* OneSignalExtension */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3639E4352CA2DF6200C2B8E3 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalExtension;
+		};
+		3639E4382CA2DF6200C2B8E3 /* OneSignalFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3639E4352CA2DF6200C2B8E3 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
+			productName = OneSignalFramework;
+		};
 		36EBA1D92C87B2A8005426DA /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 36EBA1D82C87B2A8005426DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
