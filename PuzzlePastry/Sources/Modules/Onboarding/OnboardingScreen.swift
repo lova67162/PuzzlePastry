@@ -45,12 +45,12 @@ struct OnboardingScreen: View {
             CustomLoader()
                 .frame(height: 80)
                 .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+//                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                         withAnimation {
                             viewModel.loadData()
                             isActive = true
                         }
-                    }
+//                    }
                 }
             Text("LOADING...")
                 .font(.custom("Arial", size: 24))

@@ -38,7 +38,7 @@ final class SessionManager: ObservableObject {
                         self.currentUser = nil
                     }
                     
-                    print("MDM - [Login]: User: \(user.isNotNil), Anonymus: \(self.isAnonymous), result: \(self.isLoggedIn)")
+                    print("MDM - [Login]: User: \(user.isNotNil), Anonymus: \(self.isAnonymous), result: \(self.isLoggedIn), currentUser: \(self.currentUser)")
                 }
             }
         )

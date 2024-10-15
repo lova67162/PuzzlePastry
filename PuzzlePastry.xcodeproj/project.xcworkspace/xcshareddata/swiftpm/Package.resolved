@@ -19,12 +19,30 @@
       }
     },
     {
+      "identity" : "appsflyerframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AppsFlyerSDK/AppsFlyerFramework.git",
+      "state" : {
+        "revision" : "048633aeec183ddd41b5342c5e0ff57f102dd509",
+        "version" : "6.15.3"
+      }
+    },
+    {
       "identity" : "firebase-ios-sdk",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/firebase-ios-sdk",
       "state" : {
         "revision" : "9118aca998dbe2ceac45d64b21a91c6376928df7",
         "version" : "11.1.0"
+      }
+    },
+    {
+      "identity" : "flagsmith-ios-client",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Flagsmith/flagsmith-ios-client.git",
+      "state" : {
+        "revision" : "5aecd116687d5cdf2978c413b954d7a94ae58ef7",
+        "version" : "3.7.0"
       }
     },
     {

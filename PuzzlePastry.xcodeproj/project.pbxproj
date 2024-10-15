@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		361F9D002C8B162000C666AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 361F9CFF2C8B162000C666AF /* GoogleService-Info.plist */; };
-		3639E4372CA2DF6200C2B8E3 /* OneSignalExtension in Frameworks */ = {isa = PBXBuildFile; productRef = 3639E4362CA2DF6200C2B8E3 /* OneSignalExtension */; };
-		3639E4392CA2DF6200C2B8E3 /* OneSignalFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 3639E4382CA2DF6200C2B8E3 /* OneSignalFramework */; };
 		3654ACBD2C85AF33002D4BD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3654ACBC2C85AF33002D4BD7 /* AppDelegate.swift */; };
 		3654ACBF2C85AF33002D4BD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3654ACBE2C85AF33002D4BD7 /* SceneDelegate.swift */; };
 		3654ACC12C85AF33002D4BD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3654ACC02C85AF33002D4BD7 /* ViewController.swift */; };
@@ -53,6 +50,10 @@
 		3654AD5C2C85B3F3002D4BD7 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3654AD5B2C85B3F3002D4BD7 /* Optional+Extension.swift */; };
 		3654AD5F2C85B4CD002D4BD7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3654AD5E2C85B4CD002D4BD7 /* UserModel.swift */; };
 		36A6DCCE2C8758EF008B1B23 /* RootScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6DCCD2C8758EE008B1B23 /* RootScreen.swift */; };
+		36BF31242CBE629D003ACFAA /* FlagsmithClient in Frameworks */ = {isa = PBXBuildFile; productRef = 36BF31232CBE629D003ACFAA /* FlagsmithClient */; };
+		36BF31272CBE6542003ACFAA /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 36BF31262CBE6542003ACFAA /* AppsFlyerLib */; };
+		36BF31292CBE6695003ACFAA /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36BF31282CBE6695003ACFAA /* WebView.swift */; };
+		36BF312D2CBEB57D003ACFAA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36BF312C2CBEB57D003ACFAA /* GoogleService-Info.plist */; };
 		36EBA1DA2C87B2A8005426DA /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 36EBA1D92C87B2A8005426DA /* FirebaseAnalytics */; };
 		36EBA1DC2C87B2A8005426DA /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 36EBA1DB2C87B2A8005426DA /* FirebaseAnalyticsOnDeviceConversion */; };
 		36EBA1DE2C87B2A8005426DA /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 36EBA1DD2C87B2A8005426DA /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -81,9 +82,21 @@
 		5B2156E6B64D2E94D4584FC5 /* Pods_PuzzlePastry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1442D10596261AF6D99C0378 /* Pods_PuzzlePastry.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3639E44A2CA30A0E00C2B8E3 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1442D10596261AF6D99C0378 /* Pods_PuzzlePastry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PuzzlePastry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		361F9CFF2C8B162000C666AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3654ACB92C85AF33002D4BD7 /* PuzzlePastry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuzzlePastry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3654ACBC2C85AF33002D4BD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3654ACBE2C85AF33002D4BD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +142,8 @@
 		3654AD5B2C85B3F3002D4BD7 /* Optional+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
 		3654AD5E2C85B4CD002D4BD7 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		36A6DCCD2C8758EE008B1B23 /* RootScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootScreen.swift; sourceTree = "<group>"; };
+		36BF31282CBE6695003ACFAA /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		36BF312C2CBEB57D003ACFAA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		36EBA2072C885387005426DA /* GameDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDomainModel.swift; sourceTree = "<group>"; };
 		36EBA2092C8853B5005426DA /* GameDomainModelStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDomainModelStorage.swift; sourceTree = "<group>"; };
 		6DC24B1614B0ECCCE2FC2073 /* Pods-PuzzlePastry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PuzzlePastry.release.xcconfig"; path = "Target Support Files/Pods-PuzzlePastry/Pods-PuzzlePastry.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +159,7 @@
 				36EBA1FC2C87B2A8005426DA /* FirebaseMessaging in Frameworks */,
 				36EBA1FA2C87B2A8005426DA /* FirebaseMLModelDownloader in Frameworks */,
 				36EBA1E02C87B2A8005426DA /* FirebaseAppCheck in Frameworks */,
+				36BF31242CBE629D003ACFAA /* FlagsmithClient in Frameworks */,
 				36EBA1E42C87B2A8005426DA /* FirebaseAuth in Frameworks */,
 				36EBA1DA2C87B2A8005426DA /* FirebaseAnalytics in Frameworks */,
 				36EBA1E22C87B2A8005426DA /* FirebaseAppDistribution-Beta in Frameworks */,
@@ -154,11 +170,10 @@
 				36EBA1E62C87B2A8005426DA /* FirebaseAuthCombine-Community in Frameworks */,
 				36EBA2022C87B2A8005426DA /* FirebaseStorage in Frameworks */,
 				36EBA1DC2C87B2A8005426DA /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				36BF31272CBE6542003ACFAA /* AppsFlyerLib in Frameworks */,
 				36EBA1F22C87B2A8005426DA /* FirebaseFunctions in Frameworks */,
-				3639E4372CA2DF6200C2B8E3 /* OneSignalExtension in Frameworks */,
 				36EBA1F82C87B2A8005426DA /* FirebaseInstallations in Frameworks */,
 				36EBA1FE2C87B2A8005426DA /* FirebasePerformance in Frameworks */,
-				3639E4392CA2DF6200C2B8E3 /* OneSignalFramework in Frameworks */,
 				36EBA1F02C87B2A8005426DA /* FirebaseFirestoreCombine-Community in Frameworks */,
 				36EBA1EE2C87B2A8005426DA /* FirebaseFirestore in Frameworks */,
 				36EBA1EC2C87B2A8005426DA /* FirebaseDynamicLinks in Frameworks */,
@@ -420,6 +435,7 @@
 				3654ACBC2C85AF33002D4BD7 /* AppDelegate.swift */,
 				3654ACBE2C85AF33002D4BD7 /* SceneDelegate.swift */,
 				3654ACC02C85AF33002D4BD7 /* ViewController.swift */,
+				36BF31282CBE6695003ACFAA /* WebView.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -452,7 +468,7 @@
 		36A6DCCF2C87AC24008B1B23 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				361F9CFF2C8B162000C666AF /* GoogleService-Info.plist */,
+				36BF312C2CBEB57D003ACFAA /* GoogleService-Info.plist */,
 				3654ACC22C85AF34002D4BD7 /* Main.storyboard */,
 				3654ACC52C85AF3A002D4BD7 /* Assets.xcassets */,
 				3654ACC72C85AF3A002D4BD7 /* LaunchScreen.storyboard */,
@@ -481,6 +497,7 @@
 				3654ACB62C85AF33002D4BD7 /* Frameworks */,
 				3654ACB72C85AF33002D4BD7 /* Resources */,
 				FD48F711575D128BA3791A74 /* [CP] Embed Pods Frameworks */,
+				3639E44A2CA30A0E00C2B8E3 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -511,8 +528,8 @@
 				36EBA2012C87B2A8005426DA /* FirebaseStorage */,
 				36EBA2032C87B2A8005426DA /* FirebaseStorageCombine-Community */,
 				36EBA2052C87B2A8005426DA /* FirebaseVertexAI-Preview */,
-				3639E4362CA2DF6200C2B8E3 /* OneSignalExtension */,
-				3639E4382CA2DF6200C2B8E3 /* OneSignalFramework */,
+				36BF31232CBE629D003ACFAA /* FlagsmithClient */,
+				36BF31262CBE6542003ACFAA /* AppsFlyerLib */,
 			);
 			productName = SweetPuzzles;
 			productReference = 3654ACB92C85AF33002D4BD7 /* PuzzlePastry.app */;
@@ -544,7 +561,8 @@
 			mainGroup = 3654ACB02C85AF33002D4BD7;
 			packageReferences = (
 				36EBA1D82C87B2A8005426DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				3639E4352CA2DF6200C2B8E3 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */,
+				36BF31222CBE629C003ACFAA /* XCRemoteSwiftPackageReference "flagsmith-ios-client" */,
+				36BF31252CBE6542003ACFAA /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
 			);
 			productRefGroup = 3654ACBA2C85AF33002D4BD7 /* Products */;
 			projectDirPath = "";
@@ -561,7 +579,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3654ACC92C85AF3A002D4BD7 /* LaunchScreen.storyboard in Resources */,
-				361F9D002C8B162000C666AF /* GoogleService-Info.plist in Resources */,
+				36BF312D2CBEB57D003ACFAA /* GoogleService-Info.plist in Resources */,
 				3654ACC62C85AF3A002D4BD7 /* Assets.xcassets in Resources */,
 				3654ACC42C85AF34002D4BD7 /* Main.storyboard in Resources */,
 			);
@@ -640,6 +658,7 @@
 				3654AD152C85AF7A002D4BD7 /* SecureTextField.swift in Sources */,
 				3654AD112C85AF7A002D4BD7 /* ConditionModifier.swift in Sources */,
 				3654AD022C85AF7A002D4BD7 /* RegistrationScreen.swift in Sources */,
+				36BF31292CBE6695003ACFAA /* WebView.swift in Sources */,
 				3654AD5A2C85B2D3002D4BD7 /* SessionManager.swift in Sources */,
 				3654ACFE2C85AF7A002D4BD7 /* MainViewLayout.swift in Sources */,
 				3654ACBF2C85AF33002D4BD7 /* SceneDelegate.swift in Sources */,
@@ -735,7 +754,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -792,7 +811,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -808,12 +827,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PuzzlePastry/Resources/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to show you personalized ads on the marketplaces.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -824,7 +846,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.PastryPuzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -844,12 +866,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PuzzlePastry/Resources/Info.plist;
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to show you personalized ads on the marketplaces.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -860,7 +885,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.PastryPuzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -898,12 +923,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3639E4352CA2DF6200C2B8E3 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */ = {
+		36BF31222CBE629C003ACFAA /* XCRemoteSwiftPackageReference "flagsmith-ios-client" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/OneSignal/OneSignal-iOS-SDK.git";
+			repositoryURL = "https://github.com/Flagsmith/flagsmith-ios-client.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.2.4;
+				minimumVersion = 3.7.0;
+			};
+		};
+		36BF31252CBE6542003ACFAA /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.15.3;
 			};
 		};
 		36EBA1D82C87B2A8005426DA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
@@ -917,15 +950,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3639E4362CA2DF6200C2B8E3 /* OneSignalExtension */ = {
+		36BF31232CBE629D003ACFAA /* FlagsmithClient */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3639E4352CA2DF6200C2B8E3 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
-			productName = OneSignalExtension;
+			package = 36BF31222CBE629C003ACFAA /* XCRemoteSwiftPackageReference "flagsmith-ios-client" */;
+			productName = FlagsmithClient;
 		};
-		3639E4382CA2DF6200C2B8E3 /* OneSignalFramework */ = {
+		36BF31262CBE6542003ACFAA /* AppsFlyerLib */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3639E4352CA2DF6200C2B8E3 /* XCRemoteSwiftPackageReference "OneSignal-iOS-SDK" */;
-			productName = OneSignalFramework;
+			package = 36BF31252CBE6542003ACFAA /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
 		};
 		36EBA1D92C87B2A8005426DA /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
