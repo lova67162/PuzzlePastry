@@ -6,6 +6,5 @@ target 'PuzzlePastry' do
   use_frameworks!
 
   # Pods for PuzzlePastry
-	pod 'RealmSwift'
 
 end
