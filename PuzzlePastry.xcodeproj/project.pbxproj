@@ -609,6 +609,24 @@
 			buildRules = (
 			);
 			dependencies = (
+				3678AB1C2CC1237D0032C040 /* PBXTargetDependency */,
+			);
+			name = notificationsvc;
+			productName = notificationsvc;
+			productReference = 3678AB162CC1237D0032C040 /* notificationsvc.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		3678AB152CC1237D0032C040 /* notificationsvc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3678AB1E2CC1237D0032C040 /* Build configuration list for PBXNativeTarget "notificationsvc" */;
+			buildPhases = (
+				3678AB122CC1237D0032C040 /* Sources */,
+				3678AB132CC1237D0032C040 /* Frameworks */,
+				3678AB142CC1237D0032C040 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
 			);
 			name = notificationsvc;
 			productName = notificationsvc;
@@ -1127,7 +1145,7 @@
 		};
 		D5CB736E2CC138E600A605E5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			repositoryURL = "https://github.com/Flagsmith/flagsmith-ios-client.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 11.2.0;
